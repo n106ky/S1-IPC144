@@ -1,0 +1,44 @@
+///////////////////////////////////////////////////////////////////////////
+
+                              Reflection
+                             Workshop - #6
+Full Name  : Chan Ka Ying
+Student ID#: 123231227
+Email      : kchan151@myseneca.ca
+Section    : NDD
+
+Authenticity Declaration:
+
+I declare this submission is the result of my own work and has not been
+shared with any other student or 3rd party content provider. This submitted
+piece of work is entirely of my own creation.
+///////////////////////////////////////////////////////////////////////////
+
+Q1.
+While it is true that loops can be used in programming, each type of loop serves a different purpose and has its own unique way of performing loops. 
+
+In this workshop, we require a do-while loop to perform at least once in order to check for validations. For example, we can use it to verify if the monthly income entered by the user falls within a specified range. 
+
+On the other hand, a for loop is utilized when we already know how many times the loop needs to run. For instance, if we have to loop five times to calculate the total cost of items since the user has entered the value '5' for the desired items. 
+
+While loop, which I did not cover in my workshop, is the most basic type of loop and only execute when the specified condition is true. 
+
+Although all these loops perform the same task of looping, we choose a specific type of loop that is best suited for the particular problem at hand.
+
+When working with arrays, the for loop is often our preferred choice because it allows us to access values stored in specific indexes, such as index 0 to 1, 1 to 2, and so on. 
+
+The for loop has unique features: initialization (e.g., int i = 0), a test condition, and a change, which the other loops do not have. When we want to work with parallel arrays (e.g., array1[i] and array2[i]), we need both arrays to start from the same position (e.g., index = 0), and we can easily access this by using initialization and outputting the other values one by one using a change (e.g., i++).
+
+
+Q2.
+For debug:
+I use Visual Studio as my Integrated Development Environment (IDE). The IDE notifies me of errors and warnings with the Error List located at the bottom of the screen. It can detect both syntactic errors like missing semicolons or parentheses and semantic errors like uninitialized variables or misusing = instead of ==. To adjust the errors, I click on the errors and go to the specific line of code that needs to be modified.
+
+For test:
+I decomposit the entire code into smaller parts and execute each structure individually with my IDE, making it easier to identify which part contains error(s). I refer to the workshop PDF and compare my output with the expected output to check for inconsistencies. If there is any, I review my code to see if I wrote formula or codes incorrectly. I did a walkthrough of the entire code and check for logical mistakes. I input different values multiple times to check if it works fine in every scenario.
+
+
+Q3.
+The information provided instructs the user to enter values, which I define it as a user input mistake rather than a coding error. To amend such mistake, first, to check with where the "^" symbol is pointing at and to review the red-colored words under unmatched character details to determine which line and what needs to be replaced. The next step would be to stop the current matching process and re-run the compiler to verify until the user input matches with the master output.
+
+

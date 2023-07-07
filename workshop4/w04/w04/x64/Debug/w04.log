@@ -1,0 +1,8 @@
+﻿  w4p2.c
+C:\Users\Nicole Chan\Desktop\Seneca Winter 2023\IPC144 Introduction to Programming Using C\workshop4\w04\w04\w4p2.c(35,14): warning C4553: '==': result of expression not used; did you intend '='?
+C:\Users\Nicole Chan\Desktop\Seneca Winter 2023\IPC144 Introduction to Programming Using C\workshop4\w04\w04\w4p2.c(20,34): warning C4101: 'tomatoes': unreferenced local variable
+C:\Users\Nicole Chan\Desktop\Seneca Winter 2023\IPC144 Introduction to Programming Using C\workshop4\w04\w04\w4p2.c(20,10): warning C4101: 'apples': unreferenced local variable
+C:\Users\Nicole Chan\Desktop\Seneca Winter 2023\IPC144 Introduction to Programming Using C\workshop4\w04\w04\w4p2.c(20,44): warning C4101: 'cabbages': unreferenced local variable
+C:\Users\Nicole Chan\Desktop\Seneca Winter 2023\IPC144 Introduction to Programming Using C\workshop4\w04\w04\w4p2.c(20,27): warning C4101: 'pears': unreferenced local variable
+C:\Users\Nicole Chan\Desktop\Seneca Winter 2023\IPC144 Introduction to Programming Using C\workshop4\w04\w04\w4p2.c(20,18): warning C4101: 'oranges': unreferenced local variable
+  w04.vcxproj -> C:\Users\Nicole Chan\Desktop\Seneca Winter 2023\IPC144 Introduction to Programming Using C\workshop4\w04\x64\Debug\w04.exe

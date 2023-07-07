@@ -1,0 +1,85 @@
+///////////////////////////////////////////////////////////////////////////
+
+                              Reflection
+                             Workshop - #4
+Full Name  : Chan Ka Ying
+Student ID#: 123231227
+Email      : kchan151@myseneca.ca
+Section    : NDD
+
+Authenticity Declaration:
+
+I declare this submission is the result of my own work and has not been
+shared with any other student or 3rd party content provider. This submitted
+piece of work is entirely of my own creation.
+///////////////////////////////////////////////////////////////////////////
+
+Q1.
+For making codes easy to read and maintain, I followed the Allman style:
+
+For one construct, e.g. if-else-if, should be aligned vertically at the same level, every parentheses and/or curly bracket should seperated in different lines.
+Statements or code block always one-tab space to the next level.
+
+For each construct nested in another, the inner one is one-tab space to the next level, and statements or code block within should be another level.
+
+In order to increase the readabilities, I put comments like /*INPUT FOR GROCERY PICKED*/ before entering the loop cycle.
+
+
+Q2.
+The whole coding would be hard to read without nesting due to the lengthiness, and codes need more time to run.
+
+The nesting system is like the bracket we use in maths, while nested version is x(y(a+b+c+d)), version without nesting will be like axy + bxy + cxy + dxy.
+
+Since case-by-case selection construct can only be used with constant, we may consider using if (a && b) for containing all possible situations.
+
+For example, the nesting version will be like:
+if (x)
+{
+	do
+	{
+		done = 0;
+		if (a)
+		{
+			printf("sth\n");
+		}
+		else if (a)
+		{
+			printf("sth2\n");
+		}
+	} while (done == 1);
+}
+
+Without nesting will be like:
+do
+{
+	done = 0;
+	if (x && a)
+	{
+		printf("sth\n");
+	}
+} while  (done == 1);
+
+do
+{
+	done = 0;
+	if (x && b)
+	{
+		printf("sth\n");
+	}
+} while  (done == 1);
+
+
+Q3.
+We should consider the difference between the optional sequence 'if' and 'else-if'.
+
+Case 1, using 'if':
+The computer will compare the input with every 'if' conditions, which means comparing 5 times for every input, but only the true one will be executed.
+If our input is 1, the computer will still continue to compare the other four conditions even it knows the first condition is already true.
+
+Case 2, using 'else-if':
+The computer will compare each condition one by one, it will move on to another one only if the previous one is false.
+If our input is 1, and the first condition is (value == 1), the computer will execute the statement right away and stop the other 4 comparisons.
+
+In this scenario, we only need to input one value, it can only be either one: 1 or 2 or 3 or 4, or 5.
+Since only one condition will be true, there is no need to compare every case as long as the true one has been found.
+Therefore, 'else-if' is a better option as it save more time and lets the code run smoother.

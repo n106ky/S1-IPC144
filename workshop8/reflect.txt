@@ -1,0 +1,45 @@
+///////////////////////////////////////////////////////////////////////////
+                               Reflection
+                             Workshop - #8
+Full Name  : CHAN KA YING
+Student ID#: 123231227
+
+Authenticity Declaration:
+I declare this submission is the result of my own work and has not been
+shared with any other student or 3rd party content provider. This submitted
+piece of work is entirely of my own creation.
+///////////////////////////////////////////////////////////////////////////
+
+Q1.
+Passing values via both arguments and by return can incrase flexibility. 
+
+They serve different purposes. Since 'by return' can only return one value to the caller. If there the value is useful for another functions other than the caller function, the pointer which stores the same value as 'return' will be useful.
+
+However, the negative side is, if an argument storing the same result as the 'return' does, it is duplicating and using more memories which might not be neccessary.
+
+Q2.
+The function "displayReportData" is highly cohesive since its main purpose is to display data. However, the current workshop requires us to add "***" to identify the cheapest product, which is not the intended purpose of this function. Despite this, the function remains simple.
+
+On the other hand, the function "convertLbsG" has higher coupling as it relies on another function, "convertLbsKg". If "convertLbsKg" fails, then "convertLbsG" will also fail.
+
+To improve "convertLbsG", it can be modified by using two mathematical equations to convert lbs to kg and then to g by multiplying by 1000. By doing so, the function will no longer rely on another function.
+
+Q3.
+There are 3 advantages to pass structure to function:
+1. more organized
+2. time saving
+3. increase readability
+
+Imagine 100 members of a structure need to be passed as parameters, the code would become messy and time-consuming to write. However, by passing the entire structure as one unit to a function, the result would be the same but more efficient.
+
+Pass-by-address can be used instead of pass-by-value. This approach consumes less memory since it does not create a copy of the entire variable or array.
+
+Furthermore, if we want to ensure that the values within the structure remain unchanged to avoid unexpected results, we can declare the structure as a constant.
+
+In header file, we can change the "displayCatfoodData" function as:
+void displayCatFoodData(struct CatFoodInfo);
+
+For .c file, we can change it to:
+void displayCatFoodData(struct CatFoodInfo Data) {}
+
+

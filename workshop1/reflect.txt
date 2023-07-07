@@ -1,0 +1,32 @@
+///////////////////////////////////////////////////////////////////////////
+
+                              Reflection
+                             Workshop - #1
+Full Name  : CHAN KA YING
+Student ID#: 123231227
+Email      : kchan151@myseneca.ca
+Section    : NDD
+
+Authenticity Declaration:
+
+I declare this submission is the result of my own work and has not been
+shared with any other student or 3rd party content provider. This submitted
+piece of work is entirely of my own creation.
+///////////////////////////////////////////////////////////////////////////
+
+1. No, I do not. 
+I only learnt how to use Dreamweaver (not using code) during my tertiary study back in my hometown around 7-8 years ago. (I do not think it counts)
+I always think that coding is very interesting, however, I missed the chance to study it as me and my parents thought it might be a better option to study business related subjects instead.
+In the future, I want to build my own website and applications and make good money in this industry.
+I tried to do some self-learning but I was lost with too much information.
+I know the easiest way to acquire right knowledge is studying in a proper school, and that is why I am here!
+
+2. To my understanding, a C text file is instructions that can only be understood by human but not machines.
+It involve a lot more instructions and processes behind the scenes, which includes preprocessing (generates .i file), compiling (generates .s file), assembling (generates .o file) and linking (generates .exe file).
+When it turn .c file into .i during preprocessing stage, the command <stdio.h> actually expanded into many more lines of instruction for helping the computer to process. 
+The compiler "gcc" that we type in the matrix, in fact, is a program that can help us to connect linker and assembler, step by step compiling a .c file into a .exe file.
+
+3. As I am starting from zero, understanding the basics of how to communicate with a computer (the basic codes) or what is inside a computer are important.
+I believe the course is already providing useful information for us such as the videos and readings. 
+Furthermore, knowing the direction of what kind of knowledge that I need to acquire for my future goals (apps writing, or maybe becoming a full stack developer) is also a major concern.
+I hope I will find it fun, build confident and build a strong foundation knowledge for the later courses!

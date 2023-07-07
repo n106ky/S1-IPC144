@@ -1,0 +1,48 @@
+///////////////////////////////////////////////////////////////////////////
+
+                              Reflection
+                             Workshop - #5
+Full Name  : Chan Ka Ying
+Student ID#: 123231227
+Email      : kchan151@myseneca.ca
+Section    : NDD
+
+Authenticity Declaration:
+
+I declare this submission is the result of my own work and has not been
+shared with any other student or 3rd party content provider. This submitted
+piece of work is entirely of my own creation.
+///////////////////////////////////////////////////////////////////////////
+
+Q1.
+Advantages as follow:
+
+1. Increase readability (Avoid confusion and guessing)
+Compare to magic numbers which appear without any definitions, variables and macros give names to each value, making it easier for humans to understand what those values represent.
+
+In part 1, we have JAN = 1 and DEC = 12, if it is not defined, 1 and 12 will appear as magic numbers every time in the code, which can be confusing and more guessing for the users. 
+
+2. The reusability
+By defining variables and macros, we can reuse the values throughout the code, reducing the amount of meaningless magic numbers and making it easier to maintain. Programmers should understand the values are constant and should not be modified throughout the whole codebase. This not only saves time and effort but also helps ensure consistency and correctness for the entire code.
+
+For example, in part 2, if using magic numbers, we will have '3' in the for loop and '3' to calculate the morning and evening average rates. We can increase the consistency by re-using the defined marco LOG_DAYS instead.
+
+Also, we have several MIN_YEAR, MAX_YEAR, JAN, and DEC, by using variables and macros can help reduce the possibility of inputting incorrect values.
+
+3. Easy to modify
+If there are any changes in the values, for example, we need to change the log years to 2013 and 2023, we only need one simple modification, i.e. MIN_YEAR 2013 and MAX_YEAR 2023 on the top. Compare to hardcode magic numbers, we might need to search for every 2013 and 2013 and modify them one by one and line by line, leading to more time consumption.
+
+
+Q2.
+Putting the sum and average logic outside of the validation routine and loop is a better option, reasons as follow:
+
+Reason 1: Increase efficiency
+
+If the sum and average calculations were placed inside the loop, they would be performed on every iteration of the loop. It is unnecessary to calculate the sum and average in a looping condition when we can get the same results by putting them outside the loop. Putting them inside the loop only slower the calculation speed. Conversely, computer efficiency can be increased by placing them outside of the loops.
+
+
+Reason 2: Increase readability
+Despite the fact that we can calculate "Morning total rating" and "Average morning rating" inside the morning rating validation loop as well as the evening ratings, the "Overall total rating" and "Average overall rating" can only be calculated after both validations and the previous calculations (sum and average for each of them) are done. Simply speaking, "Overall total rating" and "Average overall rating" will be outside the loop anyways.
+
+Separating the validation and calculation logic into two sections "validation for ratings" and "Summary" makes the code more consistent and cleaner, and therefore, easier to read.
+

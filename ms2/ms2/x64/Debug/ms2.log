@@ -1,0 +1,7 @@
+﻿  clinic.c
+C:\Users\Nicole Chan\Desktop\Seneca Winter 2023\IPC144 Introduction to Programming Using C\ms2\ms2\clinic.c(368,29): warning C4047: 'function': 'char *' differs in levels of indirection from 'char (*)[11]'
+C:\Users\Nicole Chan\Desktop\Seneca Winter 2023\IPC144 Introduction to Programming Using C\ms2\ms2\clinic.c(368,18): warning C4024: 'inputCString': different types for formal and actual parameter 1
+  core.c
+C:\Users\Nicole Chan\Desktop\Seneca Winter 2023\IPC144 Introduction to Programming Using C\ms2\ms2\core.c(140,16): warning C4267: '=': conversion from 'size_t' to 'int', possible loss of data
+  Generating Code...
+  ms2.vcxproj -> C:\Users\Nicole Chan\Desktop\Seneca Winter 2023\IPC144 Introduction to Programming Using C\ms2\x64\Debug\ms2.exe

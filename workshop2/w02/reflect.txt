@@ -1,0 +1,55 @@
+///////////////////////////////////////////////////////////////////////////
+
+                              Reflection
+                             Workshop - #2
+
+Full Name  : CHAN KA YING
+Student ID#: 123231227
+Email      : kchan151@myseneca.ca
+Section    : NDD
+
+Authenticity Declaration:
+
+I declare this submission is the result of my own work and has not been
+shared with any other student or 3rd party content provider. This submitted
+piece of work is entirely of my own creation.
+///////////////////////////////////////////////////////////////////////////
+
+Q1.
+In price1, the final result (as cents) is presented as an integer because of the function '%d'. 
+Being presented as an integer, the floating point (.9999) is being ignored and we have 1795 as a result.
+
+Theoretically, results may vary because of the number of significands that we stored, the more significands, the more accurate a result can be. 
+While we compare the prices, price1 '17.96f' and price3 '17.98f' are stored as float, and price2 and price4 are stored as double. 
+A double contains more significand (minimum: 10) than a float (minimum: 6). 
+However, from the results after executing the codes, we understand that the number of significands is not the main reason for the value work as expected or not.
+
+As long as the machine calculated rounded up as '.XX0000' instead of just '.XX9999', we will get our expected value when we converted it to an integer.
+
+In conclusion, it mainly depends on the calculation done by the machine.
+
+
+Q2.
+In the first printf sentence, '100.0' is an example of implicit type casting the compiler already automatically converted it as a double. 
+When we divide an integer 'money' by a double '100.0' (or a float), the answer $72.45 is automatically cast into a double, which is a result of type coercion, and it matches the function 'lf'.
+
+In the second and the third printf sentences, we can see the existence of explicit type casting of '(double)money' and '(double)100', where 'money' and '100' should be integers, but '(double)' cast it into a double. 
+Again, same as sentence 1, as we have a double to divide or divide by an integer, type promotion performs and therefore we successfully have $72.45 as a result.
+
+
+Q3.
+a)
+The value of the variable 'result' is 72. In the equation, both of them i.e. 'result', 'money' are cast explicitly as integers, and '100' is implicitly type-casted as integers too. 
+As in general rules, integer / integer = integer. 
+Even though 7245/100 suppose to be 72.45, 'result' is an integer, and therefore '45' is being ignored and we only have 72 at the end.
+
+b)
+1. $0.00
+2. $72
+3. $0.00
+4. $72
+
+c)
+For sample 1 and sample 3, the result is expected to be a float or a double because of the function 'lf'.
+However, 'result', 'money', and '100' are both integers, so the complier cannot function properly whether the result should be an integer or a float/double. 
+Therefore, they do not work as expected.

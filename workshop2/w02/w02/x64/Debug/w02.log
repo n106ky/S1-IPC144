@@ -1,0 +1,23 @@
+﻿  w2p2.c
+C:\Users\Nicole Chan\Desktop\Seneca Winter 2023\IPC144 Introduction to Programming Using C\workshop2\w02\w02\w2p2.c(62,38): warning C4244: '=': conversion from 'const double' to 'float', possible loss of data
+C:\Users\Nicole Chan\Desktop\Seneca Winter 2023\IPC144 Introduction to Programming Using C\workshop2\w02\w02\w2p2.c(63,35): warning C4244: '=': conversion from 'double' to 'int', possible loss of data
+C:\Users\Nicole Chan\Desktop\Seneca Winter 2023\IPC144 Introduction to Programming Using C\workshop2\w02\w02\w2p2.c(64,27): warning C4244: '=': conversion from 'double' to 'float', possible loss of data
+C:\Users\Nicole Chan\Desktop\Seneca Winter 2023\IPC144 Introduction to Programming Using C\workshop2\w02\w02\w2p2.c(65,38): warning C4244: '=': conversion from 'const double' to 'float', possible loss of data
+C:\Users\Nicole Chan\Desktop\Seneca Winter 2023\IPC144 Introduction to Programming Using C\workshop2\w02\w02\w2p2.c(66,35): warning C4244: '=': conversion from 'double' to 'int', possible loss of data
+C:\Users\Nicole Chan\Desktop\Seneca Winter 2023\IPC144 Introduction to Programming Using C\workshop2\w02\w02\w2p2.c(67,27): warning C4244: '=': conversion from 'double' to 'float', possible loss of data
+C:\Users\Nicole Chan\Desktop\Seneca Winter 2023\IPC144 Introduction to Programming Using C\workshop2\w02\w02\w2p2.c(68,40): warning C4244: '=': conversion from 'const double' to 'float', possible loss of data
+C:\Users\Nicole Chan\Desktop\Seneca Winter 2023\IPC144 Introduction to Programming Using C\workshop2\w02\w02\w2p2.c(69,35): warning C4244: '=': conversion from 'double' to 'int', possible loss of data
+C:\Users\Nicole Chan\Desktop\Seneca Winter 2023\IPC144 Introduction to Programming Using C\workshop2\w02\w02\w2p2.c(70,27): warning C4244: '=': conversion from 'double' to 'float', possible loss of data
+C:\Users\Nicole Chan\Desktop\Seneca Winter 2023\IPC144 Introduction to Programming Using C\workshop2\w02\w02\w2p2.c(100,53): warning C4244: '=': conversion from 'double' to 'float', possible loss of data
+C:\Users\Nicole Chan\Desktop\Seneca Winter 2023\IPC144 Introduction to Programming Using C\workshop2\w02\w02\w2p2.c(102,50): warning C4244: '=': conversion from 'double' to 'float', possible loss of data
+C:\Users\Nicole Chan\Desktop\Seneca Winter 2023\IPC144 Introduction to Programming Using C\workshop2\w02\w02\w2p2.c(104,52): warning C4244: '=': conversion from 'double' to 'float', possible loss of data
+C:\Users\Nicole Chan\Desktop\Seneca Winter 2023\IPC144 Introduction to Programming Using C\workshop2\w02\w02\w2p2.c(106,47): warning C4244: '=': conversion from 'double' to 'float', possible loss of data
+C:\Users\Nicole Chan\Desktop\Seneca Winter 2023\IPC144 Introduction to Programming Using C\workshop2\w02\w02\w2p2.c(108,48): warning C4244: '=': conversion from 'double' to 'float', possible loss of data
+C:\Users\Nicole Chan\Desktop\Seneca Winter 2023\IPC144 Introduction to Programming Using C\workshop2\w02\w02\w2p2.c(110,50): warning C4244: '=': conversion from 'double' to 'float', possible loss of data
+C:\Users\Nicole Chan\Desktop\Seneca Winter 2023\IPC144 Introduction to Programming Using C\workshop2\w02\w02\w2p2.c(129,51): warning C4244: '=': conversion from 'double' to 'float', possible loss of data
+C:\Users\Nicole Chan\Desktop\Seneca Winter 2023\IPC144 Introduction to Programming Using C\workshop2\w02\w02\w2p2.c(131,52): warning C4244: '=': conversion from 'double' to 'float', possible loss of data
+C:\Users\Nicole Chan\Desktop\Seneca Winter 2023\IPC144 Introduction to Programming Using C\workshop2\w02\w02\w2p2.c(133,54): warning C4244: '=': conversion from 'double' to 'float', possible loss of data
+C:\Users\Nicole Chan\Desktop\Seneca Winter 2023\IPC144 Introduction to Programming Using C\workshop2\w02\w02\w2p2.c(135,49): warning C4244: '=': conversion from 'double' to 'float', possible loss of data
+C:\Users\Nicole Chan\Desktop\Seneca Winter 2023\IPC144 Introduction to Programming Using C\workshop2\w02\w02\w2p2.c(137,50): warning C4244: '=': conversion from 'double' to 'float', possible loss of data
+C:\Users\Nicole Chan\Desktop\Seneca Winter 2023\IPC144 Introduction to Programming Using C\workshop2\w02\w02\w2p2.c(139,52): warning C4244: '=': conversion from 'double' to 'float', possible loss of data
+  w02.vcxproj -> C:\Users\Nicole Chan\Desktop\Seneca Winter 2023\IPC144 Introduction to Programming Using C\workshop2\w02\x64\Debug\w02.exe

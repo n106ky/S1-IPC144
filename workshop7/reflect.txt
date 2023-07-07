@@ -1,0 +1,54 @@
+///////////////////////////////////////////////////////////////////////////
+
+                              Reflection
+                             Workshop - #7
+Full Name  : Chan Ka Ying
+Student ID#: 123231227
+Email      : kchan151@myseneca.ca
+Section    : NDD
+
+Authenticity Declaration:
+
+I declare this submission is the result of my own work and has not been
+shared with any other student or 3rd party content provider. This submitted
+piece of work is entirely of my own creation.
+///////////////////////////////////////////////////////////////////////////
+
+Q1.
+Yes, I did it without any repetition in the game play portion.
+
+I accomplish it by using flags.
+
+First, I set the outer-most as do-while loop, it only execute when lives and moves both larger than 0.
+
+Second, a while-loop is set inside the do-while loop for bomb-treasure check, and it will be executed when the condition (flag) done == 0 is true. The check will deduct a life or move point for every valid user input, and update the player's status and new path accordingly. Following the bomb-treasure check, a new path and player status will be re-printed for player review. 
+
+However, the first bomb-treasure check should be started only if a clean path and new start player status is printed. To prevent the check happens before printing, I used flag (done = 1) to make sure the while-loop will not be executed. As it does not need to loop again, I place it before entering the do-while loop. After the path and status is printed, I changed done = 0 so that the while-loop can be executed.
+
+Q2.
+The alternatives of using struct is defining the variables one by one. Although it's possible to achieve the same output by creating variables, this can lead to redundancy when there are multiple players to store information for.
+
+With a struct, we can group related members together under a single structure, such as "PlayerInfo" or "GameInfo". This enhances code readability and organization, and simplifies the process of adding or removing members within a structure.
+
+In addition, members in struct can be shared across multiple instances. For example, in part 2 of my code, the "p1" instance represents player 1's information, including their symbol, number of lives, and treasures collected. We can store and access player 1's lives information using "p1.lives" and "&p1.lives". To store and access data for player 2, we simply need to change "p1" to "p2", rather than creating redundant variables. This approach helps avoid redundancy and makes it easier to manage data for multiple instances.
+
+Q3.
+The maximum number of levels of nesting is 3, it is related to the loops after game starts.
+
+The construct lines for each level are as follow:
+
+do
+{
+	while (done == 0)
+	{
+		if (p1.inputMove < MIN_inputMove || p1.inputMove > g1.gamePath)
+		{
+		}
+		else if (p1.pastPositions[p1.inputMove - 1] == 0) 
+		{
+			if (p1.pastPositions[p1.inputMove - 1] == g1.bomb[p1.inputMove - 1] && p1.pastPositions[p1.inputMove - 1] == g1.treasure[p1.inputMove - 1])
+			{
+			}
+		}
+	}
+} while (p1.lives > 0 && g1.moves > 0);

@@ -1,0 +1,73 @@
+///////////////////////////////////////////////////////////////////////////
+                               Reflection
+                         Assignment 1 - Milestone 3
+Full Name  : CHAN KA YING
+Student ID#: 123231227
+Email      : kchan151@myseneca.ca
+Section    : NDD
+
+Authenticity Declaration:
+I declare this submission is the result of my own work and has not been
+shared with any other student or 3rd party content provider. This submitted
+piece of work is entirely of my own creation.
+///////////////////////////////////////////////////////////////////////////
+
+Q1.
+This milestone required you to create additional functions that were not specified or provided for you. Briefly describe three functions you created and include the purpose and value those functions contributed towards the application. Organize your answer for each function by first including the function prototype (not the definition) followed by your explanation. (Minimum: 300 words)
+
+I additionally created the following functions to improve my code, as required, here are the prototype of those functions:
+
+Function 1. void sortingbyDate(struct Appointment appoints[], int max);
+
+This function only serve one purpose: to sort appointments by year, month, day, hour, and time, in which the earliest appointment will be first displayed, and the latest will display at last.
+
+By making use of the concept "Selection Sort", it sorts the array by arranging its elements in ascending order. 
+
+The outer for-loop is responsible for go through all unsorted element in the array, while the inner for-loop starts from the next unsorted element and compares it with the current smallest element. If the current element that being compared has a smaller value than the previous smallest element, the index of the smallest element will be updated as the current element.
+
+Since the received structure is not a const, this function can directly modify the data and does not need to return any value.
+
+
+Function 2. int matching(const struct Appointment appoints[], int maxAppoints, const struct Patient patients[], int maxPatients);
+
+The only purpose of this function is to match two files data after sorting. 
+
+It has a return type "int", and expected two data structure, Appointment and Patient. The array size of the two struct are specified by int maxAppoints and maxPatients. To prevent any unintentional changes to the data, the data structures are specified as const.
+
+It simply compares the data which share commons in two files. In the provided files, the only common is "patient number".  If a match is found, the current index number (i.e. i) is stored in a variable that is returned to the calling function.  
+
+The caller function will use the returned value as an index of an array and display useful information to user.
+
+
+Function 3. void InputYearMonthDay(struct Date *dt);
+
+This function helps with user input validation of Year, month and day. It will be called when user need to view appointment by schedule, add an appointment and remove an appointment.
+
+It receive a data structure of Date by pass by-address and will initialize the members as 0 to avoid unwanted value. It first validates the year input, followed by the month, and then the day. If the year is a leap year, the user will be prompted to enter 29 days in February, otherwise, they will be prompted to enter 28 days.
+
+To validate the input values, the function utilizes another function called "inputIntRange", which has already been created in milestone 1, and prompts the user to input a value within a specified range.
+
+It does not required to return any values, as the values will automatically saved as it is pass by address.
+
+
+Q2.
+I did not include any scanf functions in clinic.c as each functions in this .c file can make use of another function that were created in milestone 1 - core.c. 
+
+Functions in core.c mainly serve as user input validation.
+
+Functions in core.c primarily serve as user input validators. One of the most commonly used functions in core.c is inputIntRange, which ensures that users input the correct digits within a specified range. If incorrect digits are entered, an error message is displayed and the user is prompted to re-enter their input.
+
+In each core.c functions, so as to avoid any unwanted buffer interference with later input, the function "clearInputBuffer" is called to remove every character in the scanf buffer until it encounters a newline.
+
+Using these validation functions from core.c within clinic.c enhances the code's readability and avoids redundancy. Otherwise, the clinic.c code would include numerous scanf, buffer handling, and error messages, which would make it harder to read.
+
+Q3.
+The "sortingbyDate" function is placed in "viewAppointmentSchedule" and "viewAllAppointments" to help user sort appointments by date before viewing it. 
+
+The "matching" function is also placed in the same two functions to help with matching two files data. 
+
+Lastly, "InputYearMonthDay" is placed in "viewAppointmentSchedule", "addAppointment" and "removeAppointment" to prompt user input date.
+
+The factors and considerations that contributed to the creation of the three functions are:
+
+The code of these three functions are at least being used twice in clinic.c file. Since there is common behavior shared between these functions, combining them into a single function can improve code readability and prevent repetition. In addition, consider the cohesion level in clinic.c. Without the helper functions, the code has very low cohesion, and the callers are serving multiple purposes within the function. By creating new functions that serve specific purpose, the caller functions can be made more focused on a single purpose, and this can greatly increase the cohesion level between functions. This is desirable because high cohesion makes it easier for developers to reuse code structures and methods, resulting in code that is easier to maintain over time.

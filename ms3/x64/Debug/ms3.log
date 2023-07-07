@@ -1,0 +1,6 @@
+﻿  a1ms2.c
+  clinic.c
+  core.c
+C:\Users\Nicole Chan\Desktop\Seneca Winter 2023\IPC144 Introduction to Programming Using C\ms3\for ms3\core.c(140,16): warning C4267: '=': conversion from 'size_t' to 'int', possible loss of data
+  Generating Code...
+  ms3.vcxproj -> C:\Users\Nicole Chan\Desktop\Seneca Winter 2023\IPC144 Introduction to Programming Using C\ms3\ms3\x64\Debug\ms3.exe
